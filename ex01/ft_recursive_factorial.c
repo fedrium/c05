@@ -1,4 +1,14 @@
-#include<stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cyuxian <cyu-xian@student.42kl.edu.my>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/28 11:12:49 by cyuxian           #+#    #+#             */
+/*   Updated: 2022/02/28 11:13:08 by cyuxian          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 int	ft_recursive_factorial(int nb)
 {
 	if (nb < 0)
@@ -14,10 +24,4 @@ int	ft_recursive_factorial(int nb)
 		return (1);
 	}
 	return (nb * ft_recursive_factorial(nb - 1));
-}
-
-int main()
-{
-	printf("%d", ft_recursive_factorial(3));
-	return (0);
 }
