@@ -12,9 +12,9 @@
 #include<stdio.h>
 int ft_sqrt(int nb)
 {
-	int	i
+	int	root;
 
-	i = 1;
+	root = 1;
 	if (nb < 0)
 	   return (0);
 	while ((root * root < nb) && nb < 46340)
@@ -22,9 +22,13 @@ int ft_sqrt(int nb)
 		root++;
 	}
 	if (root * root == nb)
-		return (root)
+		return (root);
 	else
 		return (0);
 }
 
 int main()
+{
+	printf("%d", ft_sqrt(81));
+	return (0);
+}
